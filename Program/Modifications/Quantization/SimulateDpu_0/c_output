@@ -1,0 +1,54 @@
+vai_c_tensorflow --frozen_pb SimulateDpu_0/./quantize_results/deploy_model.pb --arch /opt/vitis_ai/compiler/arch/dpuv2/ZCU104/ZCU104.json --output_dir SimulateDpu_0/model --net_name mnist_tf >> SimulateDpu_0/c_output
+
+Kernel topology "mnist_tf_kernel_graph.jpg" for network "mnist_tf"
+kernel list info for network "mnist_tf"
+                               Kernel ID : Name
+                                       0 : mnist_tf_0
+                                       1 : mnist_tf_1
+
+                             Kernel Name : mnist_tf_0
+--------------------------------------------------------------------------------
+                             Kernel Type : DPUKernel
+                               Code Size : 3.46KB
+                              Param Size : 0.08MB
+                           Workload MACs : 3.08MOPS
+                         IO Memory Space : 5.86KB
+                              Mean Value : 0, 0, 0, 
+                      Total Tensor Count : 5
+                Boundary Input Tensor(s)   (H*W*C)
+                     conv2d_input_1:0(0) : 28*28*1
+
+               Boundary Output Tensor(s)   (H*W*C)
+                  conv2d_3_1_Conv2D:0(0) : 1*1*10
+
+                        Total Node Count : 4
+                           Input Node(s)   (H*W*C)
+                      conv2d_4_Conv2D(0) : 28*28*1
+
+                          Output Node(s)   (H*W*C)
+                    conv2d_3_1_Conv2D(0) : 1*1*10
+
+
+
+
+                             Kernel Name : mnist_tf_1
+--------------------------------------------------------------------------------
+                             Kernel Type : CPUKernel
+                Boundary Input Tensor(s)   (H*W*C)
+               activation_1_Sigmoid:0(0) : 1*1*10
+
+               Boundary Output Tensor(s)   (H*W*C)
+               activation_1_Sigmoid:0(0) : 1*1*10
+
+                           Input Node(s)   (H*W*C)
+                    activation_1_Sigmoid : 1*1*10
+
+                          Output Node(s)   (H*W*C)
+                    activation_1_Sigmoid : 1*1*10
+
+
+
+
+**************************************************
+* VITIS_AI Compilation - Xilinx Inc.
+**************************************************
