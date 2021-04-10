@@ -3,7 +3,7 @@ Research project about Xilinix's Vitis-AI framework.
 Done by Alon Nemirovsky and Amit Shtober under the supervision of Ina Rivkin and Oz Shmueli from the department of Electrical Engineering of the Technion.
 
 # Description
-Machine Learning & AI are major academic fields that are integral part of many modern research and high-tech cutting edge developments such as: autonomous cars, image processing and medical research. Therefore, many companies are trying to make a foothold in this world.
+Machine Learning & AI are major academic fields that are integral part of many modern researches and high-tech cutting edge developments such as: autonomous cars, image processing and medical research. Therefore, many companies are trying to make a foothold in this world.
 
 Xilinx created Vitis AI development environment for AI inference on Xilinx hardware platforms. It consists of optimized IP, tools, libraries, models, and example designs. It is designed with high efficiency and ease-of-use in mind, unleashing the full potential of AI acceleration on Xilinx FPGA.
 
